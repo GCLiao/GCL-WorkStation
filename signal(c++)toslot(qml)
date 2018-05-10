@@ -1,0 +1,13 @@
+==========videocanvas.h==========
+signals:
+	void send_distance(double distance);
+		
+
+==========videocanvas.cpp==========
+emit send_distance(distance_R);
+
+
+==========main.qml==========
+onSend_distance: {
+	distancetext.text = (distance.toFixed(2));
+}
