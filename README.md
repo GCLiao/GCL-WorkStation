@@ -1,14 +1,16 @@
 # GCL-WorkStation
-==========videocanvas.h==========
-signals:
-	void send_distance(double distance);
-		
+…or create a new repository on the command line
+echo "# GCL-WorkStation" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/GCLiao/GCL-WorkStation.git
+git push -u origin master
 
-==========videocanvas.cpp==========
-emit send_distance(distance_R);
+…or push an existing repository from the command line
+git remote add origin https://github.com/GCLiao/GCL-WorkStation.git
+git push -u origin master
 
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
 
-==========main.qml==========
-onSend_distance: {
-	distancetext.text = (distance.toFixed(2));
-}
